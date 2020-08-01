@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import org.testng.Assert as Assert
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -14,9 +15,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-//preparação
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://todolistme.net/')
@@ -25,13 +24,11 @@ WebUI.verifyElementPresent(findTestObject('ToDoPage/ul_list'), 5)
 
 def valorInicial = CustomKeywords.'ListaToDo.listaQuantidadeDeElementos'(findTestObject('ToDoPage/ul_list'))
 
-//exercício
-WebUI.setText(findTestObject('ToDoPage/input_task'), 'Realizar um teste no katalon')
-
-WebUI.sendKeys(findTestObject('ToDoPage/input_task'), Keys.chord(Keys.ENTER))
+CustomKeywords.'ToDoPage.selecionarTarefaFinalizada'('Drag the list, Example template, over this lists title above.')
 
 def valorEsperado = CustomKeywords.'ListaToDo.listaQuantidadeDeElementos'(findTestObject('ToDoPage/ul_list'))
 
-//verificação
-assert valorInicial != valorEsperado
+Assert.assertEquals(valorEsperado < valorInicial, true)
+
+WebUI.closeBrowser()
 

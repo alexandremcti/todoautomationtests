@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import org.openqa.selenium.Keys
 
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -40,6 +41,7 @@ public class ToDoPage {
 
 	@Keyword
 	def static selecionarTarefaFinalizada(String tarefa){
+		WebUI.check(findTestObject("Object Repository/ToDoPage/input_checkbox_task", ['nomeDaTask' : tarefa]), FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Keyword
