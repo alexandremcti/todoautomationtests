@@ -24,7 +24,7 @@ WebUI.verifyElementPresent(findTestObject('ToDoPage/ul_list'), 5)
 
 def valorInicial = CustomKeywords.'ListaToDo.listaQuantidadeDeElementos'(findTestObject('ToDoPage/ul_list'))
 
-CustomKeywords.'ToDoPage.selecionarTarefaFinalizada'('Drag the list, Example template, over this lists title above.')
+CustomKeywords.'ToDoPage.selecionarTarefaFinalizada'(task)
 
 def valorEsperado = CustomKeywords.'ListaToDo.listaQuantidadeDeElementos'(findTestObject('ToDoPage/ul_list'))
 
