@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DeveCriarUmaNovaLista</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3794b378-f72f-4e61-8931-434f4ba7776d</testCaseGuid>
+   <variable>
+      <defaultValue>'Lista de Testes'</defaultValue>
+      <description></description>
+      <id>5cc5bdcd-b93d-4684-9f9d-3bca6b9b49ce</id>
+      <masked>false</masked>
+      <name>nomeDaLista</name>
+   </variable>
+</TestCaseEntity>
