@@ -6,12 +6,11 @@
    <elementGuidId>2e16e877-55f9-4d12-99a2-e3e234970b5a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//ul[@id='mytodos']/child::li/child::span[text()='${nomeDaTask}']/preceding-sibling::input</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//ul[@id='mytodos']/child::li/child::span[contains(text(),'${nomeDaTask}')]/preceding-sibling::input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
