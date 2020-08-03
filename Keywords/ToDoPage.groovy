@@ -46,6 +46,7 @@ public class ToDoPage {
 
 	@Keyword
 	def static puxarTarefaFinalizada(String tarefa){
+		WebUI.dragAndDropToObject(findTestObject("Object Repository/ToDoPage/li_task", ['taskName' : tarefa] ), findTestObject("Object Repository/ToDoPage/ul_list_done"), FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Keyword
