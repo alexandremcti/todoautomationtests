@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Arrasta Tarefa Finalizada Teste</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e2c735ec-63b5-45a5-af0d-1af00a6f7053</testCaseGuid>
+   <variable>
+      <defaultValue>'The list, Important Info, is worth a quick look.'</defaultValue>
+      <description></description>
+      <id>8c606284-0456-4b63-bbf6-dfa79e905d0b</id>
+      <masked>false</masked>
+      <name>task</name>
+   </variable>
+</TestCaseEntity>
