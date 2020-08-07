@@ -32,6 +32,6 @@ WebUI.sendKeys(findTestObject('ToDoPage/input_task'), Keys.chord(Keys.ENTER))
 
 def valorEsperado = CustomKeywords.'ListaToDo.listaQuantidadeDeElementos'(findTestObject('ToDoPage/ul_list'))
 
-//verificação se valor inicial é diferente do esperado
+//verificação
 assert valorInicial != valorEsperado
 
