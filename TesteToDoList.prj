@@ -6,6 +6,7 @@
    <UUID>d959dd57-7f47-4c3e-bcd6-8521de98e35c</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\alexandremagno\git\todoautomationtests\TesteToDoList.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

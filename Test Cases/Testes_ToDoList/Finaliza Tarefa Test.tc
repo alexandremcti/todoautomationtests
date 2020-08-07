@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>48d13edf-8a54-4683-b5d5-b0a7f41d33c6</testCaseGuid>
    <variable>
-      <defaultValue>'Drag the list, Example template, over this lists title above.'</defaultValue>
+      <defaultValue>'Para falhar'</defaultValue>
       <description></description>
       <id>a53f4996-5413-4e12-b488-98c0e8a89e38</id>
       <masked>false</masked>
